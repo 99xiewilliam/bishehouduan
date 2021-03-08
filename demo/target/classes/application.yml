@@ -1,0 +1,22 @@
+server:
+  port: 10088
+spring:
+#<<<<<<< Updated upstream
+# datasource:
+#    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#    username: root
+#    password: root
+#    driver-class-name: com.mysql.jdbc.Driver
+#    platform: mysql
+#=======
+  datasource:
+    url: jdbc:mysql://localhost:3306/data?serverTimezone=Asia/Shanghai&allowMultiQueries=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+#>>>>>>> Stashed changes
+  data:
+    mongodb:
+      host: 114.67.200.39
+      port: 27817
+      database: Hypertension

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cad.demo.dao.UserDAO">
+    <insert id="addUser" parameterType="com.cad.demo.entity.User">
+        insert into user (uname,phone,gender) value (#{uname},#{phone},#{gender});
+    </insert>
+    <select id="getUsers" parameterType="com.cad.demo.entity.User" resultType="com.cad.demo.entity.vo.UserVO">
+        select id,uname,phone,gender,state,update_time from user where is_deleted=0
+        <if test="uname!=null">
+            and uname like #{uname}
+        </if>
+        <if test="gender!=null and gender!=-1">
+            and gender=#{gender}
+        </if>
+        <if test="state!=null and state!=-1">
+            and state=#{state}
+        </if>
+    </select>
+    <!--    逻辑删除-->
+    <update id="deleteUser">
+        update user set is_deleted=1 where id=#{param1}
+    </update>
+    <update id="updateUser" parameterType="com.cad.demo.entity.User">
+        update user set uname=#{uname},phone=#{phone},gender=#{gender},state=#{state} where id=#{id}
+    </update>
+</mapper>
