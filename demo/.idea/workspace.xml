@@ -23,49 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2abc9d62-985f-4f33-a5b4-59018d837b57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/ReferenceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/testController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/entity/xieweihaoEntity/Query.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/ReferenceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/testService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/xieweihaoPojo/Reference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/ReferenceController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/testController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/entity/xieweihaoEntity/Query.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/ReferenceService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/testService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/xieweihaoPojo/Reference.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo_frontend/src/views/paper.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vue-element-admin/src/views/xieweihao/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/exception/GlobalException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/exception/GlobalException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/demo.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/dao/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/exception/GlobalException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/exception/GlobalException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/exception/GlobalExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo_frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo_frontend/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue-element-admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-element-admin/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue-element-admin/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-element-admin/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue-element-admin/src/components/Breadcrumb/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-element-admin/src/components/Breadcrumb/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue-element-admin/src/layout/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-element-admin/src/layout/components/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue-element-admin/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-element-admin/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue-element-admin/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-element-admin/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue-element-admin/src/views/components-demo/split-pane.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-element-admin/src/views/components-demo/split-pane.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue-element-admin/src/views/dashboard/admin/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-element-admin/src/views/dashboard/admin/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue-element-admin/src/views/dashboard/editor/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-element-admin/src/views/dashboard/editor/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue-element-admin/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-element-admin/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +65,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/微信小程序/insurance" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -124,19 +82,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -214,6 +159,8 @@
       <workItem from="1614790695881" duration="1290000" />
       <workItem from="1614938819683" duration="10498000" />
       <workItem from="1615024312929" duration="27179000" />
+      <workItem from="1615175389360" duration="3293000" />
+      <workItem from="1615894913707" duration="1740000" />
     </task>
     <servers />
   </component>
@@ -253,26 +200,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="482" y="82" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1615109198334" />
-    <state x="430" y="127" key="FileChooserDialogImpl" timestamp="1611851346647">
+    <state x="430" y="127" key="FileChooserDialogImpl" timestamp="1615895726579">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="430" y="127" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1611851346647" />
-    <state width="1493" height="335" key="GridCell.Tab.0.bottom" timestamp="1615109333328">
+    <state x="430" y="127" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615895726579" />
+    <state width="1493" height="204" key="GridCell.Tab.0.bottom" timestamp="1615232125252">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="335" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615109333328" />
-    <state width="1493" height="335" key="GridCell.Tab.0.center" timestamp="1615109333327">
+    <state width="1493" height="204" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615232125252" />
+    <state width="1493" height="204" key="GridCell.Tab.0.center" timestamp="1615232125252">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="335" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1615109333327" />
-    <state width="1493" height="335" key="GridCell.Tab.0.left" timestamp="1615109333327">
+    <state width="1493" height="204" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1615232125252" />
+    <state width="1493" height="204" key="GridCell.Tab.0.left" timestamp="1615232125252">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="335" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1615109333327" />
-    <state width="1493" height="335" key="GridCell.Tab.0.right" timestamp="1615109333328">
+    <state width="1493" height="204" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1615232125252" />
+    <state width="1493" height="204" key="GridCell.Tab.0.right" timestamp="1615232125252">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="335" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1615109333328" />
+    <state width="1493" height="204" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1615232125252" />
     <state width="1493" height="232" key="GridCell.Tab.1.bottom" timestamp="1615086011444">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
