@@ -12,6 +12,7 @@ import java.util.List;
 @CrossOrigin
 @RestController
 @RequestMapping(value = "/Entities")
+//实体类型
 public class EntityController {
     @Autowired
     private EntityService entityService;
