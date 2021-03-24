@@ -54,7 +54,7 @@ public class ItemService {
         }
 
     }
-
+    //添加
     public int addItem(Item item){
         int judge = 0;
         try {
