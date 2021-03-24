@@ -23,7 +23,7 @@ public class OrcController {
     private OcrService orcService;
 
     private String languadge = "chi_sim";
-
+    //识别图片
     @PostMapping("/addOcrFile")
     public String addOcrFile(@RequestParam("img1") MultipartFile img1) throws TesseractException, IOException {
         System.out.println(img1);
@@ -68,6 +68,7 @@ public class OrcController {
         }
     }
 
+    //设置识别图片的语言（中文，英文）
     @PostMapping("/setLanguage")
     public RetResult setLanguage(@RequestBody @Validated Ocr ocr) {
         int judge = 1;

@@ -14,7 +14,7 @@ public class RelationService {
     public RelationService(MongoTemplate mongoTemplate) {
         this.mongoTemplate = mongoTemplate;
     }
-
+    //获取所有实体
     public List<Relation> getEntities() {
         List<Relation> res;
         res = mongoTemplate.findAll(Relation.class);

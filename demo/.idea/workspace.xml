@@ -24,6 +24,13 @@
   <component name="ChangeListManager">
     <list default="true" id="2abc9d62-985f-4f33-a5b4-59018d837b57" name="Default Changelist" comment="备注">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/ExpertInputController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/ExpertInputController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/FileMarkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/FileMarkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/OrcController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/OrcController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/ItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/OcrService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/OcrService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/ReferenceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/ReferenceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/RelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/RelationService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +167,7 @@
       <workItem from="1616404781270" duration="1828000" />
       <workItem from="1616414833304" duration="319000" />
       <workItem from="1616415170776" duration="186000" />
-      <workItem from="1616555135130" duration="3163000" />
+      <workItem from="1616555135130" duration="4773000" />
     </task>
     <task id="LOCAL-00001" summary="modify pom">
       <created>1615897524766</created>
@@ -226,8 +233,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/OcrService.java</url>
-          <line>11</line>
-          <properties class="com.cad.demo.service.xieweihaoService.OcrService">
+          <line>12</line>
+          <properties class="com.cad.demo.service.xieweihaoService.OcrService" method="readArticle">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="7" />
