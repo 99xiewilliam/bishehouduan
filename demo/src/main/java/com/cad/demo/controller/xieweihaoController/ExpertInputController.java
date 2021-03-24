@@ -16,6 +16,7 @@ import java.util.List;
 @CrossOrigin
 @RequestMapping(value = "/ExpertInput")
 
+//专家录入
 public class ExpertInputController {
 
     @Autowired

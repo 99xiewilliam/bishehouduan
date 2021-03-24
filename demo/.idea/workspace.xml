@@ -22,9 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2abc9d62-985f-4f33-a5b4-59018d837b57" name="Default Changelist" comment="modify pom">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/EntityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/EntityController.java" afterDir="false" />
+    <list default="true" id="2abc9d62-985f-4f33-a5b4-59018d837b57" name="Default Changelist" comment="备注">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/ExpertInputController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/ExpertInputController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +159,7 @@
       <workItem from="1616404781270" duration="1828000" />
       <workItem from="1616414833304" duration="319000" />
       <workItem from="1616415170776" duration="186000" />
-      <workItem from="1616555135130" duration="36000" />
+      <workItem from="1616555135130" duration="346000" />
     </task>
     <task id="LOCAL-00001" summary="modify pom">
       <created>1615897524766</created>
@@ -169,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615897524766</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="备注">
+      <created>1616555492560</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616555492560</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +195,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="modify pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify pom" />
+    <MESSAGE value="备注" />
+    <option name="LAST_COMMIT_MESSAGE" value="备注" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
