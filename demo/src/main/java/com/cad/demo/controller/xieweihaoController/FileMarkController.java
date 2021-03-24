@@ -15,10 +15,12 @@ import java.util.List;
 @CrossOrigin
 @RequestMapping(value = "/FileMarks")
 
+//标注
 public class FileMarkController {
 
     @Autowired
     private FileMarkService fileMarkService;
+    //添加实体和关系标注
     @PostMapping("/addFileMark")
     public RetResult addFileMark(@RequestBody @Validated FileMark fileMark) {
         int judge = fileMarkService.addFileMark(fileMark);
@@ -28,7 +30,7 @@ public class FileMarkController {
         }
         return new RetResult(500, "添加失败");
     }
-
+    //获取标注数据
     @GetMapping("/getFileMark")
     public List<FileMark> getFileMark(){
         return fileMarkService.getFileMarkAll();

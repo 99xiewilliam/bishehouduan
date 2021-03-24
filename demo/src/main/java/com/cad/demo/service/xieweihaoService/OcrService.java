@@ -9,6 +9,7 @@ import java.io.File;
 
 @Service
 public class OcrService{
+    //识别图片具体代码
     public String readArticle(File img, String lan) throws TesseractException{
         String orcResult = null;
         ITesseract iTesseract = new Tesseract();

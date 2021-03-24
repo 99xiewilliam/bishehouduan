@@ -22,6 +22,7 @@ public class ItemService {
         this.mongoTemplate = mongoTemplate;
     }
 
+    //获取所有文本类型
     public List<Item> getReferenceListAll(){
         List<Item> res;
         List<Item> res1;

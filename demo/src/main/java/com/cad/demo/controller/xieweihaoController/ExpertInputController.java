@@ -21,6 +21,8 @@ public class ExpertInputController {
 
     @Autowired
     private ExpertInputService expertInputSerivice;
+
+    //添加专家录入的数据
     @PostMapping("/addExpertInput")
     public RetResult addFileMark(@RequestBody @Validated ExpertInput expertInput) {
         int judge = expertInputSerivice.addExpertInput(expertInput);
@@ -30,7 +32,7 @@ public class ExpertInputController {
         }
         return new RetResult(500, "添加失败");
     }
-
+    //获取专家录入数据库的数据
     @GetMapping("/getFileMark")
     public List<ExpertInput> getFileMark(){
         return expertInputSerivice.getExpertInputAll();

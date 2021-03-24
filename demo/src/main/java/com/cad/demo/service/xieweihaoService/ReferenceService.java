@@ -16,6 +16,7 @@ public class ReferenceService {
         this.mongoTemplate = mongoTemplate;
     }
 
+    //获取所有论文
     public List<Reference> getReferenceListAll(){
         List<Reference> res;
         res = mongoTemplate.findAll(Reference.class);
