@@ -8,7 +8,9 @@ import com.cad.demo.xieweihaoPojo.Relation_marks;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import java.io.File;
 import java.util.List;
 

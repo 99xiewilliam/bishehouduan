@@ -14,6 +14,11 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/Hypertension
+      database: Hypertension
 #>>>>>>> Stashed changes
 #  data:
 #    mongodb:
@@ -21,7 +26,3 @@ spring:
 #      port: 27817
 #      database: Hypertension
 
-  data:
-    mongodb:
-      uri: mongodb://localhost:27017/Hypertension
-      database: Hypertension

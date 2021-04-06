@@ -67,19 +67,19 @@ public class PdfService {
 //            sos.flush();
 //            sos.close();
 
-            pdf.setName(grid.getFilename());
-            InputStream is = grid.getInputStream();
-            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-            byte[] bytes = new byte[1024];
-            int rc = 0;
-            while((rc = is.read(bytes, 0, 1024)) > 0) {
-                byteArrayOutputStream.write(bytes, 0, 100);
-            }
-
-            BASE64Encoder encoder = new BASE64Encoder();
-            //String base64 = encoder.encode(bytes);
-            pdf.setBase64(byteArrayOutputStream.toByteArray());
-            res.add(pdf);
+//            pdf.setName(grid.getFilename());
+//            InputStream is = grid.getInputStream();
+//            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+//            byte[] bytes = new byte[1024];
+//            int rc = 0;
+//            while((rc = is.read(bytes, 0, 1024)) > 0) {
+//                byteArrayOutputStream.write(bytes, 0, 100);
+//            }
+//
+//            BASE64Encoder encoder = new BASE64Encoder();
+//            //String base64 = encoder.encode(bytes);
+//            pdf.setBase64(byteArrayOutputStream.toByteArray());
+//            res.add(pdf);
         }
         return res;
     }

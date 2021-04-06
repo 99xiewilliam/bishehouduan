@@ -22,16 +22,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2abc9d62-985f-4f33-a5b4-59018d837b57" name="Default Changelist" comment="添加ocrdata">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/config/MongoConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/PdfController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/PdfService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/xieweihaoPojo/Pdf.java" afterDir="false" />
+    <list default="true" id="2abc9d62-985f-4f33-a5b4-59018d837b57" name="Default Changelist" comment="添加pom">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/config/MongoConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/OcrDataController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/PdfController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/PdfService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/xieweihaoPojo/OcrData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/xieweihaoPojo/Pdf.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/ExpertInputController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/ExpertInputController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/OcrService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/OcrService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/PdfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/PdfService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/ExpertInputController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/ExpertInputController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/OcrService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/OcrService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -184,7 +189,7 @@
       <workItem from="1616937443210" duration="25745000" />
       <workItem from="1617625611361" duration="29000" />
       <workItem from="1617626108669" duration="1586000" />
-      <workItem from="1617628393561" duration="10783000" />
+      <workItem from="1617628393561" duration="12747000" />
     </task>
     <task id="LOCAL-00001" summary="modify pom">
       <created>1615897524766</created>
@@ -228,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617348886771</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="添加pdf预览">
+      <created>1617644763308</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617644763308</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +263,9 @@
     <MESSAGE value="备注" />
     <MESSAGE value="添加备注" />
     <MESSAGE value="添加ocrdata" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加ocrdata" />
+    <MESSAGE value="添加pdf预览" />
+    <MESSAGE value="添加pom" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加pom" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
