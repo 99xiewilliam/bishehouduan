@@ -36,19 +36,13 @@ public class PdfController {
     public void getPdfData(@RequestBody @Validated Pdf pdf, HttpServletResponse response) throws IOException {
         System.out.println(pdf.getId());
         String id = pdf.getId();
-        //id = "606ae579cdb2ca093653a88d";
         GridFSFile gridFSFile = gridFsTemplate.findOne(Query.query(Criteria.where("_id").is(id)));
         //打开流下载对象
         GridFSDownloadStream downloadStream = gridFSBucket.openDownloadStream(gridFSFile.getObjectId());
         //获取流对象
         GridFsResource gridFsResource = new GridFsResource(gridFSFile, downloadStream);
         InputStream inputStream = gridFsResource.getInputStream();
-//        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-//        byte[] buff = new byte[100];
-//        int rc = 0;
-//        while ((rc = inputStream.read(buff, 0, 100)) > 0) {
-//            byteArrayOutputStream.write(buff, 0, rc);
-//        }
+
         OutputStream outputStream = response.getOutputStream();
         int b = 0;
         while ((b = inputStream.read()) != -1){
@@ -57,5 +51,29 @@ public class PdfController {
 
         outputStream.close();
         inputStream.close();
+    }
+    @PostMapping(value = "/getPdfNew")
+    public void getPdfDataNew(@RequestBody @Validated Pdf pdf, HttpServletResponse response) throws IOException {
+        String id = pdf.getId();
+        GridFSFile gridFSFile = gridFsTemplate.findOne(Query.query(Criteria.where("_id").is(id)));
+        //打开流下载对象
+        GridFSDownloadStream downloadStream = gridFSBucket.openDownloadStream(gridFSFile.getObjectId());
+        //获取流对象
+        GridFsResource gridFsResource = new GridFsResource(gridFSFile, downloadStream);
+        InputStream inputStream = gridFsResource.getInputStream();
+        response.setHeader("Access-Control-Allow-Origin", "*");
+        response.setContentType("application/pdf");
+        OutputStream outputStream = response.getOutputStream();
+        int b = 0;
+        while ((b = inputStream.read()) != -1){
+            outputStream.write(b);
+        }
+
+        outputStream.close();
+        inputStream.close();
+    }
+    @GetMapping(value = "/getPdfInfo")
+    public List<Pdf> getPdfInfo() {
+        return pdfService.getPdf();
     }
 }

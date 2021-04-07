@@ -22,6 +22,26 @@ public class ReferenceService {
         res = mongoTemplate.findAll(Reference.class);
         return res;
     }
+    public Reference getReference(String id) {
+        Query query = new Query();
+        query.addCriteria(Criteria.where("_id").is(id));
+        Reference reference =  mongoTemplate.findOne(query, Reference.class);
+        return reference;
+    }
+    public int ModifyInfo(String id) {
+        int judge = 0;
+        try {
+            Query query = new Query();
+            query.addCriteria(Criteria.where("_id").is(id));
+            Update update = new Update();
+            update.set("is_marked", true);
+            mongoTemplate.upsert(query, update, Reference.class);
+            judge = 1;
+        }catch (Exception e){
+            System.out.println(e);
+        }
+        return judge;
+    }
     public List<Reference> getReferenceList(String category, String word){
         List<Reference> res;
         if (category.equals("new")){

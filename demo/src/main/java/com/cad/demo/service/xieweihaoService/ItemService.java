@@ -27,29 +27,39 @@ public class ItemService {
         List<Item> res;
         List<Item> res1;
         res = mongoTemplate.findAll(Item.class);
-        MongoClient mongoClient = new MongoClient("114.67.200.39", 27817);
+        MongoClient mongoClient = new MongoClient("127.0.0.1", 27017);
         MongoDatabase mongoDatabase = mongoClient.getDatabase("Hypertension");
-        MongoCollection<Document> collection_item = mongoDatabase.getCollection("Tagging_items");
+        MongoCollection<Document> collection_item = mongoDatabase.getCollection("TestCnkiPaper");
         for(Item i :res){
             //System.out.println(i.getCol_name());
-            dealWithCollection(i.getCol_name(), mongoDatabase, collection_item);
+            dealWithCollection(i.getCol_name(), mongoDatabase, collection_item, mongoTemplate);
         }
         res1 = mongoTemplate.findAll(Item.class);
         return res1;
     }
 
-    public static void dealWithCollection(String name, MongoDatabase mongoDatabase, MongoCollection<Document> collection_item){
-        Boolean state = false;
+    public static void dealWithCollection(String name, MongoDatabase mongoDatabase, MongoCollection<Document> collection_item, MongoTemplate mongoTemplate){
 
         if(name != ""){
             MongoCollection<Document> collection = mongoDatabase.getCollection(name);
-            int a = (int) collection.countDocuments();
-            int b = (int) collection.countDocuments(Filters.eq("is_marked",true));
+            int a = (int) collection_item.countDocuments();
+            int b = (int) collection_item.countDocuments(Filters.eq("is_marked",true));
             if(a == b && a != 0){
-                state = true;
+                Query query = new Query();
+                query.addCriteria(Criteria.where("col_name").is(name));
+                Update update1 = new Update();
+                update1.set("state", true);
+                mongoTemplate.upsert(query, update1, Item.class);
             }
             System.out.println(a);
-            collection_item.updateMany(Filters.eq("col_name",name), new Document("$set", new Document("sum_num", a).append("mark_num",b).append("state",state)));
+            System.out.println(b);
+            Query query = new Query();
+            query.addCriteria(Criteria.where("col_name").is(name));
+            Update update = new Update();
+            update.set("sum_num", a);
+            update.set("mark_num", b);
+            mongoTemplate.upsert(query, update, Item.class);
+            //collection_item.updateMany(Filters.eq("col_name",name), new Document("$set", new Document("sum_num", a).append("mark_num",b).append("state",state)));
 
         }
 
@@ -61,6 +71,21 @@ public class ItemService {
             mongoTemplate.insert(item);
             judge = 1;
         }catch (Exception e){
+            System.out.println(e);
+        }
+        return judge;
+    }
+
+    public int updateTime(String time, String name) {
+        int judge = 0;
+        try {
+            Query query = new Query();
+            Update update = new Update();
+            query.addCriteria(Criteria.where("col_name").is(name));
+            update.set("time", time);
+            mongoTemplate.upsert(query, update, Item.class);
+            judge = 1;
+        }catch (Exception e) {
             System.out.println(e);
         }
         return judge;
