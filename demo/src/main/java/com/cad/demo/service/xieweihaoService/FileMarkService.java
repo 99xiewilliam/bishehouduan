@@ -89,4 +89,10 @@ public class FileMarkService {
         res = mongoTemplate.findAll(FileMark.class);
         return res;
     }
+
+    public int updateStatus() {
+        int judge = 0;
+        
+        return judge;
+    }
 }
