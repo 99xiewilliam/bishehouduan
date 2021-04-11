@@ -41,7 +41,7 @@ public class ItemService {
     public static void dealWithCollection(String name, MongoDatabase mongoDatabase, MongoCollection<Document> collection_item, MongoTemplate mongoTemplate){
 
         if(name != ""){
-            MongoCollection<Document> collection = mongoDatabase.getCollection(name);
+            //MongoCollection<Document> collection = mongoDatabase.getCollection(name);
             int a = (int) collection_item.countDocuments();
             int b = (int) collection_item.countDocuments(Filters.eq("is_marked",true));
             if(a == b && a != 0){
@@ -83,8 +83,14 @@ public class ItemService {
             Update update = new Update();
             query.addCriteria(Criteria.where("col_name").is(name));
             update.set("time", time);
-            mongoTemplate.upsert(query, update, Item.class);
-            judge = 1;
+            long a = mongoTemplate.count(query, Item.class);
+            System.out.println(a);
+            if (a != 0) {
+                System.out.println("update time success");
+                mongoTemplate.upsert(query, update, Item.class);
+                judge = 1;
+            }
+
         }catch (Exception e) {
             System.out.println(e);
         }

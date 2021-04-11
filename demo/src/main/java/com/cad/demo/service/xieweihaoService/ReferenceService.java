@@ -34,9 +34,13 @@ public class ReferenceService {
             Query query = new Query();
             query.addCriteria(Criteria.where("_id").is(id));
             Update update = new Update();
+            long a = mongoTemplate.count(query, Reference.class);
             update.set("is_marked", true);
-            mongoTemplate.upsert(query, update, Reference.class);
-            judge = 1;
+            if (a != 0) {
+                mongoTemplate.upsert(query, update, Reference.class);
+                judge = 1;
+            }
+
         }catch (Exception e){
             System.out.println(e);
         }

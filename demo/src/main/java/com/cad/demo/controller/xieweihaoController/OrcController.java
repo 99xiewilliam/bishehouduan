@@ -25,7 +25,7 @@ public class OrcController {
     private String languadge = "chi_sim";
     //识别图片
     @PostMapping("/addOcrFile")
-    public String addOcrFile(@RequestParam("img1") MultipartFile img1) throws TesseractException, IOException {
+    public String addOcrFile(@RequestParam("img1") MultipartFile img1) throws Exception {
         System.out.println(img1);
         String filePath = "C:/Users/27256/Desktop/img/" + img1.getOriginalFilename();
         InputStream ins = null;
