@@ -90,9 +90,78 @@ public class FileMarkService {
         return res;
     }
 
-    public int updateStatus() {
+    public int updateEntityStatus(String document_id, String object_type, String name, boolean status) {
         int judge = 0;
-        
+
+        try {
+            Query query = new Query();
+            query.addCriteria(Criteria.where("document_id").is(document_id).and("object_marks.object_type").is(object_type).and("object_marks.objects.name").is(name));
+            //Update update = new Update();
+            //update.set("object_marks.objects.is_checked", true).set("object_marks.objects.is_passed", status);
+            long a = mongoTemplate.count(query, FileMark.class);
+            FileMark fileMark = mongoTemplate.findOne(query, FileMark.class);
+            if (a != 0) {
+                List<Object_marks> object_marks = fileMark.getObject_marks();
+                for (Object_marks object_mark : object_marks) {
+                    if (object_mark.getObject_type().equals(object_type)) {
+                        List<Object> objects = object_mark.getObjects();
+                        for (Object object : objects) {
+                            if (object.getName().equals(name)) {
+                                object.setIs_checked(true);
+                                object.setIs_passed(status);
+                                judge = 1;
+                                break;
+                            }
+                        }
+                        break;
+                    }
+
+                }
+                mongoTemplate.remove(query, FileMark.class);
+                mongoTemplate.insert(fileMark);
+
+            }
+        }catch (Exception e) {
+            System.out.println(e);
+        }
+
+        return judge;
+    }
+
+    public int updateRelationStatus(String document_id, String start_type, String relation_type, String end_type, String start_object, String end_object, boolean status) {
+        int judge = 0;
+
+        try {
+            Query query = new Query();
+            query.addCriteria(Criteria.where("document_id").is(document_id).and("relation_marks.start_type").is(start_type).and("relation_marks.relation_type").is(relation_type).and("relation_marks.end_type").is(end_type).and("relation_marks.relations.start_object").is(start_object).and("relation_marks.relations.end_object").is(end_object));
+            //Update update = new Update();
+            //update.set("relation_marks.$.relations.$.is_checked", true).set("relation_marks.$.relations.$.is_passed", status);
+            long a = mongoTemplate.count(query, FileMark.class);
+            FileMark fileMark = mongoTemplate.findOne(query, FileMark.class);
+            if (a != 0) {
+                //mongoTemplate.upsert(query, update, FileMark.class);
+                List<Relation_marks> relation_marks = fileMark.getRelation_marks();
+                for(Relation_marks relation_mark: relation_marks) {
+                    if (relation_mark.getStart_type().equals(start_type) && relation_mark.getRelation_type().equals(relation_type) && relation_mark.getEnd_type().equals(end_type)) {
+                        List<Relations> relations = relation_mark.getRelations();
+                        for(Relations relation: relations) {
+                            if (relation.getStart_object().equals(start_object) && relation.getEnd_object().equals(end_object)) {
+                                relation.setIs_checked(true);
+                                relation.setIs_passed(status);
+                                judge = 1;
+                                break;
+                            }
+                        }
+                        break;
+                    }
+                }
+                mongoTemplate.remove(query, FileMark.class);
+                mongoTemplate.insert(fileMark);
+            }
+        }catch (Exception e) {
+            System.out.println(e);
+        }
+
         return judge;
     }
 }

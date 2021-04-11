@@ -2,8 +2,7 @@ package com.cad.demo.controller.xieweihaoController;
 
 import com.cad.demo.common.RetResult;
 import com.cad.demo.service.xieweihaoService.FileMarkService;
-import com.cad.demo.xieweihaoPojo.FileMark;
-import com.cad.demo.xieweihaoPojo.Relation_marks;
+import com.cad.demo.xieweihaoPojo.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -34,5 +33,27 @@ public class FileMarkController {
     @GetMapping("/getFileMark")
     public List<FileMark> getFileMark(){
         return fileMarkService.getFileMarkAll();
+    }
+
+    //更新object状态
+    @PutMapping(value = "/updateEntityStatus")
+    public int UpdateEntityStatus(@RequestBody @Validated EntityAudit entityAudit) {
+        String id = entityAudit.getDocument_id();
+        String object_type = entityAudit.getObject_type();
+        String name = entityAudit.getName();
+        boolean status = entityAudit.isStatus();
+        return fileMarkService.updateEntityStatus(id, object_type, name, status);
+    }
+
+    @PutMapping(value = "/updateRelationStatus")
+    public int UpdateRelationStatus(@RequestBody @Validated RelationAudit relationAudit) {
+        String id = relationAudit.getDocument_id();
+        String start_type = relationAudit.getStart_type();
+        String relation_type = relationAudit.getRelation_type();
+        String end_type = relationAudit.getEnd_type();
+        String start_object = relationAudit.getStart_object();
+        String end_object = relationAudit.getEnd_object();
+        boolean status = relationAudit.isStatus();
+        return fileMarkService.updateRelationStatus(id, start_type, relation_type, end_type, start_object, end_object, status);
     }
 }
