@@ -1,5 +1,5 @@
 package com.cad.demo.service.xieweihaoService;
-import com.cad.demo.xieweihaoPojo.Reference;
+import com.cad.demo.xieweihaoPojo.*;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
@@ -22,23 +22,102 @@ public class ReferenceService {
         res = mongoTemplate.findAll(Reference.class);
         return res;
     }
+    public List<DiagnosisReport> getDiagnosisReportListAll(){
+        List<DiagnosisReport> res;
+        res = mongoTemplate.findAll(DiagnosisReport.class);
+        return res;
+    }
+    public List<DrugInstructions> getDrugInstructionsListAll(){
+        List<DrugInstructions> res;
+        res = mongoTemplate.findAll(DrugInstructions.class);
+        return res;
+    }
+    public List<Guide> getGuideListAll(){
+        List<Guide> res;
+        res = mongoTemplate.findAll(Guide.class);
+        return res;
+    }
+    public List<Book> getBookListAll(){
+        List<Book> res;
+        res = mongoTemplate.findAll(Book.class);
+        return res;
+    }
     public Reference getReference(String id) {
         Query query = new Query();
         query.addCriteria(Criteria.where("_id").is(id));
         Reference reference =  mongoTemplate.findOne(query, Reference.class);
         return reference;
     }
-    public int ModifyInfo(String id) {
+
+    public Book getBook(String id) {
+        Query query = new Query();
+        query.addCriteria(Criteria.where("_id").is(id));
+        Book reference =  mongoTemplate.findOne(query, Book.class);
+        return reference;
+    }
+    public Guide getGuide(String id) {
+        Query query = new Query();
+        query.addCriteria(Criteria.where("_id").is(id));
+        Guide reference =  mongoTemplate.findOne(query, Guide.class);
+        return reference;
+    }
+    public DrugInstructions getDrugInstructions(String id) {
+        Query query = new Query();
+        query.addCriteria(Criteria.where("_id").is(id));
+        DrugInstructions reference =  mongoTemplate.findOne(query, DrugInstructions.class);
+        return reference;
+    }
+    public DiagnosisReport getDiagnosisReport(String id) {
+        Query query = new Query();
+        query.addCriteria(Criteria.where("_id").is(id));
+        DiagnosisReport reference =  mongoTemplate.findOne(query, DiagnosisReport.class);
+        return reference;
+    }
+    public int ModifyInfo(String id, String category) {
         int judge = 0;
         try {
             Query query = new Query();
             query.addCriteria(Criteria.where("_id").is(id));
             Update update = new Update();
-            long a = mongoTemplate.count(query, Reference.class);
-            update.set("is_marked", true);
-            if (a != 0) {
-                mongoTemplate.upsert(query, update, Reference.class);
-                judge = 1;
+            if (category.equals("Paper")) {
+                long a = mongoTemplate.count(query, Reference.class);
+                update.set("is_marked", true);
+                if (a != 0) {
+                    mongoTemplate.upsert(query, update, Reference.class);
+                    judge = 1;
+                }
+            }
+            else if (category.equals("Book")) {
+                long a = mongoTemplate.count(query, Book.class);
+                update.set("is_marked", true);
+                if (a != 0) {
+                    mongoTemplate.upsert(query, update, Book.class);
+                    judge = 1;
+                }
+            }
+            else if (category.equals("Guide")) {
+                long a = mongoTemplate.count(query, Guide.class);
+                update.set("is_marked", true);
+                if (a != 0) {
+                    mongoTemplate.upsert(query, update, Guide.class);
+                    judge = 1;
+                }
+            }
+            else if (category.equals("DrugInstructions")) {
+                long a = mongoTemplate.count(query, DrugInstructions.class);
+                update.set("is_marked", true);
+                if (a != 0) {
+                    mongoTemplate.upsert(query, update, DrugInstructions.class);
+                    judge = 1;
+                }
+            }
+            else if (category.equals("DiagnosisReport")) {
+                long a = mongoTemplate.count(query, DiagnosisReport.class);
+                update.set("is_marked", true);
+                if (a != 0) {
+                    mongoTemplate.upsert(query, update, DiagnosisReport.class);
+                    judge = 1;
+                }
             }
 
         }catch (Exception e){

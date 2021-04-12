@@ -29,16 +29,23 @@ public class ItemService {
         res = mongoTemplate.findAll(Item.class);
         MongoClient mongoClient = new MongoClient("127.0.0.1", 27017);
         MongoDatabase mongoDatabase = mongoClient.getDatabase("Hypertension");
-        MongoCollection<Document> collection_item = mongoDatabase.getCollection("TestCnkiPaper");
+
         for(Item i :res){
             //System.out.println(i.getCol_name());
-            dealWithCollection(i.getCol_name(), mongoDatabase, collection_item, mongoTemplate);
+            MongoCollection<Document> collection_item;
+            if (i.getCol_name().equals("Paper")) {
+                collection_item = mongoDatabase.getCollection("TestCnkiPaper");
+            }else {
+                collection_item = mongoDatabase.getCollection(i.getCol_name());
+            }
+            dealWithCollection(i.getCol_name(), collection_item, mongoTemplate);
+
         }
         res1 = mongoTemplate.findAll(Item.class);
         return res1;
     }
 
-    public static void dealWithCollection(String name, MongoDatabase mongoDatabase, MongoCollection<Document> collection_item, MongoTemplate mongoTemplate){
+    public static void dealWithCollection(String name, MongoCollection<Document> collection_item, MongoTemplate mongoTemplate){
 
         if(name != ""){
             //MongoCollection<Document> collection = mongoDatabase.getCollection(name);

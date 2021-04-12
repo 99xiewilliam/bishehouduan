@@ -30,4 +30,14 @@ public class Request {
     private String time;
     private String name;
 
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    private String category;
+
 }
