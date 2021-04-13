@@ -2,6 +2,15 @@ package com.cad.demo.xieweihaoPojo;
 
 public class EntityAudit {
     private String document_id;
+    private String check_user_id;
+
+    public void setCheck_user_id(String check_user_id) {
+        this.check_user_id = check_user_id;
+    }
+
+    public String getCheck_user_id() {
+        return check_user_id;
+    }
 
     public String getDocument_id() {
         return document_id;

@@ -42,7 +42,9 @@ public class FileMarkController {
         String object_type = entityAudit.getObject_type();
         String name = entityAudit.getName();
         boolean status = entityAudit.isStatus();
-        return fileMarkService.updateEntityStatus(id, object_type, name, status);
+        String check_user_id = entityAudit.getCheck_user_id();
+        System.out.println(check_user_id);
+        return fileMarkService.updateEntityStatus(id, object_type, name, status, check_user_id);
     }
 
     @PutMapping(value = "/updateRelationStatus")
@@ -54,6 +56,7 @@ public class FileMarkController {
         String start_object = relationAudit.getStart_object();
         String end_object = relationAudit.getEnd_object();
         boolean status = relationAudit.isStatus();
-        return fileMarkService.updateRelationStatus(id, start_type, relation_type, end_type, start_object, end_object, status);
+        String check_user_id = relationAudit.getCheck_user_id();
+        return fileMarkService.updateRelationStatus(id, start_type, relation_type, end_type, start_object, end_object, status, check_user_id);
     }
 }

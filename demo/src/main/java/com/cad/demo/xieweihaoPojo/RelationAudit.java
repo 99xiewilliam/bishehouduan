@@ -4,6 +4,15 @@ public class RelationAudit {
     private String document_id;
     private String start_type;
     private String relation_type;
+    private String check_user_id;
+
+    public void setMark_user_id(String check_user_id) {
+        this.check_user_id = check_user_id;
+    }
+
+    public String getCheck_user_id() {
+        return check_user_id;
+    }
 
     public boolean isStatus() {
         return status;

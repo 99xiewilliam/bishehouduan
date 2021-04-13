@@ -90,7 +90,7 @@ public class FileMarkService {
         return res;
     }
 
-    public int updateEntityStatus(String document_id, String object_type, String name, boolean status) {
+    public int updateEntityStatus(String document_id, String object_type, String name, boolean status, String check_user_id) {
         int judge = 0;
 
         try {
@@ -109,6 +109,7 @@ public class FileMarkService {
                             if (object.getName().equals(name)) {
                                 object.setIs_checked(true);
                                 object.setIs_passed(status);
+                                object.setCheck_user_id(check_user_id);
                                 judge = 1;
                                 break;
                             }
@@ -128,7 +129,7 @@ public class FileMarkService {
         return judge;
     }
 
-    public int updateRelationStatus(String document_id, String start_type, String relation_type, String end_type, String start_object, String end_object, boolean status) {
+    public int updateRelationStatus(String document_id, String start_type, String relation_type, String end_type, String start_object, String end_object, boolean status, String check_user_id) {
         int judge = 0;
 
         try {
@@ -148,6 +149,7 @@ public class FileMarkService {
                             if (relation.getStart_object().equals(start_object) && relation.getEnd_object().equals(end_object)) {
                                 relation.setIs_checked(true);
                                 relation.setIs_passed(status);
+                                relation.setCheck_user_id(check_user_id);
                                 judge = 1;
                                 break;
                             }
