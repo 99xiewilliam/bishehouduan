@@ -40,6 +40,16 @@ public class PdfService {
         return res;
     }
 
+    public int getPdfNum(){
+        int count = 0;
+        Query query = new Query();
+        GridFSFindIterable gridFSFile = gridFsTemplate.find(query);
+        for(GridFSFile file : gridFSFile) {
+            count = count + 1;
+        }
+        return count;
+    }
+
     public static List<GridFSDBFile> getByFileName(GridFS gridFS){
         DBObject query  = new BasicDBObject();
         List<GridFSDBFile> res = gridFS.find(query);

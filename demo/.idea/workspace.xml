@@ -22,23 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2abc9d62-985f-4f33-a5b4-59018d837b57" name="Default Changelist" comment="处理审核">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/pythonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/pythonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/xieweihaoPojo/python.java" afterDir="false" />
+    <list default="true" id="2abc9d62-985f-4f33-a5b4-59018d837b57" name="Default Changelist" comment="处理多项任务">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/PeopleRememberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/authController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/PeopleRememberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/authService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/xieweihaoPojo/PeopleRemember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/xieweihaoPojo/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/xieweihaoPojo/auth.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/ReferenceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/ReferenceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/ItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/PaperInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/PaperInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/ReferenceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/ReferenceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/xieweihaoPojo/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/xieweihaoPojo/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/FileMarkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/FileMarkController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/ReferenceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/ReferenceController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/FileMarkService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/FileMarkService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/ItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/ItemService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/PaperInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/PaperInfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/ReferenceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/ReferenceService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/xieweihaoPojo/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/xieweihaoPojo/Request.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/PdfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/PdfController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/PdfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/PdfService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/PdfController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/PdfController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/PdfService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/PdfService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +188,7 @@
       <workItem from="1617626108669" duration="1586000" />
       <workItem from="1617628393561" duration="32221000" />
       <workItem from="1617788134367" duration="1338000" />
-      <workItem from="1617957562099" duration="31763000" />
+      <workItem from="1617957562099" duration="40421000" />
     </task>
     <task id="LOCAL-00001" summary="modify pom">
       <created>1615897524766</created>
@@ -264,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618152933266</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="处理多项任务">
+      <created>1618221443089</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1618221443089</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,7 +294,8 @@
     <MESSAGE value="添加pom" />
     <MESSAGE value="处理图像" />
     <MESSAGE value="处理审核" />
-    <option name="LAST_COMMIT_MESSAGE" value="处理审核" />
+    <MESSAGE value="处理多项任务" />
+    <option name="LAST_COMMIT_MESSAGE" value="处理多项任务" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -338,6 +342,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/pythonService.java</url>
           <line>11</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/authService.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="com.mongodb.MongoSocketOpenException" package="com.mongodb" />

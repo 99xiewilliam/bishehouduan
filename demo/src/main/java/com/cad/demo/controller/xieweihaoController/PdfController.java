@@ -76,4 +76,9 @@ public class PdfController {
     public List<Pdf> getPdfInfo() {
         return pdfService.getPdf();
     }
+
+    @GetMapping(value = "/getNum")
+    public int getNum() {
+        return pdfService.getPdfNum();
+    }
 }
