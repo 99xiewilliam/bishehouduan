@@ -1,5 +1,7 @@
 package com.cad.demo.xieweihaoPojo;
 
+import org.springframework.web.multipart.MultipartFile;
+
 public class Request {
     public String getId() {
         return id;
@@ -28,8 +30,17 @@ public class Request {
     }
 
     private String time;
-    private String name;
 
+    public void setImg(MultipartFile img) {
+        this.img = img;
+    }
+
+    public MultipartFile getImg() {
+        return img;
+    }
+
+    private String name;
+    private MultipartFile img;
     public void setCategory(String category) {
         this.category = category;
     }

@@ -5,6 +5,7 @@ import com.cad.demo.service.xieweihaoService.PaperInfoService;
 import com.cad.demo.xieweihaoPojo.*;
 import com.cad.demo.service.xieweihaoService.ReferenceService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.json.JsonObject;
@@ -72,36 +73,36 @@ public class ReferenceController {
 
     //获取查询的文献内容
     @PostMapping(value = "/getOnePaper")
-    public Reference getOnePaper(@RequestBody String id){
-        String new_id = id.substring(0, id.length() - 1);
+    public Reference getOnePaper(@RequestBody @Validated Request request){
+        String new_id = request.getId();
         System.out.print(new_id);
         return referenceService.getReference(new_id);
     }
 
     @PostMapping(value = "/getOneBook")
-    public Book getOneBook(@RequestBody String id){
-        String new_id = id.substring(0, id.length() - 1);
+    public Book getOneBook(@RequestBody Request request){
+        String new_id = request.getId();
         System.out.print(new_id);
         return referenceService.getBook(new_id);
     }
 
     @PostMapping(value = "/getOneGuide")
-    public Guide getOneGuide(@RequestBody String id){
-        String new_id = id.substring(0, id.length() - 1);
+    public Guide getOneGuide(@RequestBody Request request){
+        String new_id = request.getId();
         System.out.print(new_id);
         return referenceService.getGuide(new_id);
     }
 
     @PostMapping(value = "/getOneDrugInstructions")
-    public DrugInstructions getOneDrugInstructions(@RequestBody String id){
-        String new_id = id.substring(0, id.length() - 1);
+    public DrugInstructions getOneDrugInstructions(@RequestBody Request request){
+        String new_id = request.getId();
         System.out.print(new_id);
         return referenceService.getDrugInstructions(new_id);
     }
 
     @PostMapping(value = "/getOneDiagnosisReport")
-    public DiagnosisReport getOneDiagnosisReport(@RequestBody String id){
-        String new_id = id.substring(0, id.length() - 1);
+    public DiagnosisReport getOneDiagnosisReport(@RequestBody Request request){
+        String new_id = request.getId();
         System.out.print(new_id);
         return referenceService.getDiagnosisReport(new_id);
     }
