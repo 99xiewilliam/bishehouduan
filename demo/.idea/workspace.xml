@@ -22,15 +22,34 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2abc9d62-985f-4f33-a5b4-59018d837b57" name="Default Changelist" comment="更改审核人员的身份">
+    <list default="true" id="2abc9d62-985f-4f33-a5b4-59018d837b57" name="Default Changelist" comment="更改getbookInfo">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/HugeGraphLabelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/RestApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/dao/HugeGraphLabelDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/dao/RestApiDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/entity/HugeGraphVertex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/HugeGraphLabelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/RestApiService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/HugeGraphLabelController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/PeopleRememberController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/RestApiController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/authController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/dao/HugeGraphLabelDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/dao/RestApiDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/entity/HugeGraphVertex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/HugeGraphLabelService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/PeopleRememberService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/RestApiService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/authService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/xieweihaoPojo/PeopleRemember.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/xieweihaoPojo/Token.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/xieweihaoPojo/auth.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/ReferenceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/ReferenceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/xieweihaoPojo/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/xieweihaoPojo/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/FileMarkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/FileMarkController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/ReferenceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/ReferenceController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/FileMarkService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/FileMarkService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/xieweihaoPojo/EntityAudit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/xieweihaoPojo/EntityAudit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/xieweihaoPojo/RelationAudit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/xieweihaoPojo/RelationAudit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/xieweihaoPojo/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/xieweihaoPojo/Request.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +71,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/OrcController.java" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -72,7 +102,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.40229884" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -84,6 +114,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -175,7 +216,13 @@
       <workItem from="1617788134367" duration="1338000" />
       <workItem from="1617957562099" duration="40421000" />
       <workItem from="1618292723732" duration="5162000" />
-      <workItem from="1618376210047" duration="7270000" />
+      <workItem from="1618376210047" duration="24161000" />
+      <workItem from="1618635655375" duration="2991000" />
+      <workItem from="1618638743381" duration="224000" />
+      <workItem from="1618638991308" duration="214000" />
+      <workItem from="1618639268225" duration="296000" />
+      <workItem from="1618639716737" duration="179000" />
+      <workItem from="1618639932170" duration="2674000" />
     </task>
     <task id="LOCAL-00001" summary="modify pom">
       <created>1615897524766</created>
@@ -261,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618320203500</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="更改getbookInfo">
+      <created>1618425713353</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1618425713354</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +344,8 @@
     <MESSAGE value="处理审核" />
     <MESSAGE value="处理多项任务" />
     <MESSAGE value="更改审核人员的身份" />
-    <option name="LAST_COMMIT_MESSAGE" value="更改审核人员的身份" />
+    <MESSAGE value="更改getbookInfo" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改getbookInfo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

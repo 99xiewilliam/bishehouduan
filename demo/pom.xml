@@ -7,11 +7,11 @@
     <groupId>com.cad</groupId>
     <artifactId>demo</artifactId>
     <version>1.0-SNAPSHOT</version>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.0.RELEASE</version>
-
         <relativePath/>
     </parent>
 
@@ -115,12 +115,12 @@
             <groupId>javax.activation</groupId>
             <artifactId>activation</artifactId>
             <version>1.1.1</version>
-<!--=======-->
-<!--        <dependency>-->
-<!--            <groupId>org.mybatis</groupId>-->
-<!--            <artifactId>mybatis-spring</artifactId>-->
-<!--            <version>2.0.5</version>-->
-<!--&gt;>>>>>> Stashed changes-->
+
+        </dependency>
+        <dependency>
+            <groupId>com.spring4all</groupId>
+            <artifactId>mongodb-plus-spring-boot-starter</artifactId>
+            <version>1.0.0.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>net.sourceforge.tess4j</groupId>
@@ -137,5 +137,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
     </dependencies>
 </project>

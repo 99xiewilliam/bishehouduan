@@ -10,14 +10,11 @@
         <module name="demo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="im" target="1.8" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
-      <module name="im" options="-parameters" />
     </option>
   </component>
 </project>

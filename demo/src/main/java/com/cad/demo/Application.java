@@ -7,6 +7,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
+import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -14,6 +15,9 @@ import org.springframework.http.converter.HttpMessageConverter;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.web.client.RestTemplate;
+
+
 
 @SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
 // @MapperScan("com.cad.demo.dao")
@@ -21,7 +25,10 @@ public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class);
     }
-
+    @Bean
+    public RestTemplate restTemplate(RestTemplateBuilder builder){
+        return builder.build();
+    }
     @Bean
     public HttpMessageConverters fastJsonHttpMessageConverters() {
         //1.需要定义一个convert转换消息的对象;
