@@ -22,33 +22,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2abc9d62-985f-4f33-a5b4-59018d837b57" name="Default Changelist" comment="更改getbookInfo">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/HugeGraphLabelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/RestApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/dao/HugeGraphLabelDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/dao/RestApiDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/entity/HugeGraphVertex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/HugeGraphLabelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/RestApiService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/HugeGraphLabelController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/PeopleRememberController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/RestApiController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/authController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/dao/HugeGraphLabelDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/dao/RestApiDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/entity/HugeGraphVertex.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/HugeGraphLabelService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/PeopleRememberService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/RestApiService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/authService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/xieweihaoPojo/PeopleRemember.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/xieweihaoPojo/Token.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/xieweihaoPojo/auth.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="2abc9d62-985f-4f33-a5b4-59018d837b57" name="Default Changelist" comment="更改hugegraph">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/RestApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/RestApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/dao/RestApiDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/dao/RestApiDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/RestApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/service/xieweihaoService/RestApiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cad/demo/xieweihaoPojo/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cad/demo/xieweihaoPojo/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/RestApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/controller/xieweihaoController/RestApiController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/dao/RestApiDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/dao/RestApiDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/RestApiService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/service/xieweihaoService/RestApiService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/cad/demo/xieweihaoPojo/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cad/demo/xieweihaoPojo/Request.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -222,7 +205,7 @@
       <workItem from="1618638991308" duration="214000" />
       <workItem from="1618639268225" duration="296000" />
       <workItem from="1618639716737" duration="179000" />
-      <workItem from="1618639932170" duration="2674000" />
+      <workItem from="1618639932170" duration="10096000" />
     </task>
     <task id="LOCAL-00001" summary="modify pom">
       <created>1615897524766</created>
@@ -315,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618425713354</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="更改hugegraph">
+      <created>1618658338570</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1618658338570</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,7 +335,8 @@
     <MESSAGE value="处理多项任务" />
     <MESSAGE value="更改审核人员的身份" />
     <MESSAGE value="更改getbookInfo" />
-    <option name="LAST_COMMIT_MESSAGE" value="更改getbookInfo" />
+    <MESSAGE value="更改hugegraph" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改hugegraph" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -402,6 +393,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/cad/demo/controller/xieweihaoController/PdfController.java</url>
           <line>56</line>
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cad/demo/dao/RestApiDAO.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="com.mongodb.MongoSocketOpenException" package="com.mongodb" />
